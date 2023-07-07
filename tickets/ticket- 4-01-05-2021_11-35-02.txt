@@ -1,0 +1,11 @@
+ticket- 4-01-05-2021_11-35-02.txt
+masa : Normal - 9.0€
+tipo: : Básica - 3.0€
+INGREDIENTES EXTRA: [] - 0.0€
+tamaño : mediana - 15.0%
+
+ El cliente Si quiere bebida, el coste es: 2.0€
+
+ El gratinado 0,28
+ El total del pedido es: 16,08
+Gracias por confiar en nuestra pizzeria

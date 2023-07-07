@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="572.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pizzeria.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="603.0" fitWidth="803.0" layoutX="7.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../estilos/800x600.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="223.0" layoutX="27.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="740.0" />
+        <RadioButton fx:id="radioNormal" layoutX="39.0" layoutY="82.0" mnemonicParsing="false" onAction="#calcularPrecioComposicion" text="Normal">
+            <toggleGroup>
+                <ToggleGroup fx:id="grupoRadiosMasa" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="radioIntegral" layoutX="39.0" layoutY="115.0" mnemonicParsing="false" onAction="#calcularPrecioComposicion" text="Integral" toggleGroup="$grupoRadiosMasa" />
+        <Label fx:id="labelMasa" layoutX="39.0" layoutY="47.0" text="Masa">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Spinner fx:id="spinnerTamaño" layoutX="607.0" layoutY="82.0" onMouseClicked="#calcularPrecioComposicion" />
+        <Label fx:id="labelTipo" layoutX="222.0" layoutY="47.0" text="Tipo">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelIngredientes" layoutX="396.0" layoutY="40.0" text="Ingedientes extra ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelTamaño" layoutX="659.0" layoutY="47.0" text="Tamaño">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <ListView fx:id="listViewIngredientes" layoutX="346.0" layoutY="82.0" onMouseClicked="#calcularPrecioComposicion" prefHeight="103.0" prefWidth="218.0" />
+        <Label fx:id="labelConsejoIngredientes" layoutX="343.0" layoutY="61.0" prefHeight="17.0" prefWidth="244.0" text="(seleccionar varios mantén pulsado Control)" textAlignment="CENTER" />
+        <AnchorPane layoutX="35.0" layoutY="346.0" prefHeight="231.0" prefWidth="747.0">
+            <children>
+                <Label fx:id="labelPedido" layoutY="14.0" text="Pedido">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="textareaPedido" editable="false" layoutY="39.0" prefHeight="152.0" prefWidth="732.0" />
+                <Label fx:id="precio" layoutX="446.0" layoutY="201.0" prefHeight="42.0" prefWidth="281.0" style="-fx-border-color: white;" text="PRECIO: " textAlignment="RIGHT" textFill="#1b1b1a">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <ComboBox fx:id="choiceTipo" layoutX="160.0" layoutY="82.0" onAction="#calcularPrecioComposicion" prefWidth="150.0" />
+        <AnchorPane layoutX="538.0" layoutY="318.0" />
+      <CheckBox fx:id="bebida" layoutX="39.0" layoutY="151.0" mnemonicParsing="false" onAction="#calcularPrecioComposicion" text="bebida" />
+      <CheckBox fx:id="gratinada" layoutX="39.0" layoutY="183.0" mnemonicParsing="false" onAction="#calcularPrecioComposicion" prefHeight="17.0" prefWidth="108.0" text="Pìzza gratinada" />
+      <HBox layoutX="351.0" layoutY="247.0" prefHeight="128.0" prefWidth="128.0">
+         <children>
+            <Button fx:id="botonGenerar" mnemonicParsing="false" onAction="#generarTicket" prefHeight="128.0" prefWidth="225.0" text="Generar Ticket" />
+         </children>
+      </HBox>
+      <Button fx:id="bListadePrecios" layoutX="79.0" layoutY="306.0" mnemonicParsing="false" onAction="#seleecionarListaDePrecios" text="Cargar Lista de Precios" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+ticket- 1-01-05-2021_10-32-26.txt
+masa : Integral - 9.5€
+tipo: : cuatro quesos - 5.0€
+INGREDIENTES EXTRA: [Tomate] - 1.5€
+tamaño : familiar - 30.0%
+
+ El cliente Si quiere bebida, el coste es: 2.0€
+
+ El gratinado 0,00
+ El total del pedido es: 22,80
+Gracias por confiar en nuestra pizzeria

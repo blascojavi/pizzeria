@@ -1,0 +1,11 @@
+ticket- 2-01-05-2021_10-34-30.txt
+masa : Integral - 9.5€
+tipo: : cuatro quesos - 5.0€
+INGREDIENTES EXTRA: [jamón, queso, Tomate, cebolla] - 4448.75€
+tamaño : mediana - 15.0%
+
+ El cliente Si quiere bebida, el coste es: 2.0€
+
+ El gratinado 102,65
+ El total del pedido es: 5237,39
+Gracias por confiar en nuestra pizzeria

@@ -1,0 +1,18 @@
+@tipoMasa
+Normal:9
+Integral:9.50
+@tipoPizza
+Básica:3
+cuatro quesos:5
+Barbacoa:7
+Mexicana:8.50
+@ingredientes
+jamón:4444
+queso:0.75
+Tomate:1.5
+cebolla:2.5
+Olivas:1
+@tamaño
+pequeña:0
+mediana:15
+familiar:30
